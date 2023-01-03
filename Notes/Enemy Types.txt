@@ -1,0 +1,46 @@
+Modes:
+Wander around aimlessly but is pretty fast and can walk into on accident
+Shoot a projectile at player
+Go around an object endlessly and is indestructible - spiked
+Spiked enemy - stands still
+Spears falling from sky at players location
+Piece of enemy falls off, flies at player
+Shoot projectiles in either straight or diagonal
+Speed rush attack in direction of player when the player is either directly vertical or horizontal to them (think snakes from Zelda 1), otherwise they wander around aimlessly.
+Fly in circular motion
+Fly in parabola
+Wander around aimlessly, but with slight pause in steps.
+Chuck spear in direction of player
+Comes up and out of ground, otherwise wanders aimlessly.
+Throw whip
+Shoots lazer (usually a warning prior to attack), goes into freeze mode so you can't attack it.
+Flame follows player for a period of time - may be lauched by an enemy
+Spikes coming out of ground.
+Makes you fly back when you strike it - these enemies follow you
+Ring of fire goes in a circle around a pillar or block - indestructible
+Bomb thrower towards player - distance thrown is only so far
+Hopper that doesn't follow player
+Hopper that follows player
+Bees that wander aimlessly but fast
+Water enemy - shoots fireball
+Enemies with defensive barrier in front of them.
+Fire enemy who goes diaginally and bounces off of anything it touches - indestructible
+Random electify = shocks and damages player if he attacks when they are electrified.
+Moves in opposite direction as you, can only be hurt from attack on back or side
+Spiked, moves along predefined path - indestructible
+
+
+
+
+
+
+Item types:
+Music playing instrument
+Shield or ranged attack blocking item
+
+
+
+Town types:
+Town raised on water or somehow intermixed with lots of water
+
+

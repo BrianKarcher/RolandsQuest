@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73CBDC60-D872-4438-9233-31CF9061349A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RQ.Model</RootNamespace>
+    <AssemblyName>RQ.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Reference Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Reference Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\TargetingData.cs" />
+    <Compile Include="Animation\DirectionTransitionAnimateData.cs" />
+    <Compile Include="AttackData.cs" />
+    <Compile Include="Attributes\AnimationComponentAttribute.cs" />
+    <Compile Include="Attributes\AnimationTypeAttribute.cs" />
+    <Compile Include="Attributes\TagAttribute.cs" />
+    <Compile Include="Attributes\UniqueIdentifierAttribute.cs" />
+    <Compile Include="Audio\AudioClipInfo.cs" />
+    <Compile Include="Audio\AudioType.cs" />
+    <Compile Include="Audio\PlayOneShotData.cs" />
+    <Compile Include="Audio\PlaySoundData.cs" />
+    <Compile Include="Audio\PlaySoundInfo.cs" />
+    <Compile Include="Audio\SetVolumeData.cs" />
+    <Compile Include="Config\RQBaseConfig.cs" />
+    <Compile Include="Containers\UsableContainer.cs" />
+    <Compile Include="Containers\UsableObjectInfo.cs" />
+    <Compile Include="Enums\ConditionType.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Enums\GoToType.cs" />
+    <Compile Include="Enums\Orbs.cs" />
+    <Compile Include="Enums\PathType.cs" />
+    <Compile Include="Enums\SaveOrLoad.cs" />
+    <Compile Include="Enums\VariableType.cs" />
+    <Compile Include="Game Data\Quest\QuestConfig.cs" />
+    <Compile Include="Game Data\Quest\QuestData.cs" />
+    <Compile Include="Game Data\Quest\QuestEntryConfig.cs" />
+    <Compile Include="Game Data\Quest\QuestEntryData.cs" />
+    <Compile Include="Game Data\Quest\QuestStatus.cs" />
+    <Compile Include="Game Data\Story Progress\StoryConfig.cs" />
+    <Compile Include="Game Data\Story Progress\StoryActConfig.cs" />
+    <Compile Include="Game Data\Story Progress\StoryChapterConfig.cs" />
+    <Compile Include="Game Data\Story Progress\StoryProgress.cs" />
+    <Compile Include="Game Data\Story Progress\StorySceneConfig.cs" />
+    <Compile Include="Game Data\SubsceneData.cs" />
+    <Compile Include="Game Data\SubsceneType.cs" />
+    <Compile Include="Graphics\TweenToColorInfo.cs" />
+    <Compile Include="IActionBase.cs" />
+    <Compile Include="Info\UsagePanelInfo.cs" />
+    <Compile Include="Interfaces\IActionController.cs" />
+    <Compile Include="Interfaces\IActionSequence.cs" />
+    <Compile Include="Interfaces\IAIComponent.cs" />
+    <Compile Include="Interfaces\IAnimationComponent.cs" />
+    <Compile Include="Interfaces\IButtonManager.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IBasicPhysicsComponent.cs" />
+    <Compile Include="Interfaces\IComponentBase.cs" />
+    <Compile Include="Interfaces\IEventTrigger.cs" />
+    <Compile Include="Interfaces\IGameStateController.cs" />
+    <Compile Include="Interfaces\IRQConfig.cs" />
+    <Compile Include="Interfaces\ISequencerLink.cs" />
+    <Compile Include="Interfaces\ISerializableObject.cs" />
+    <Compile Include="Interfaces\ICameraClass.cs" />
+    <Compile Include="Interfaces\ICollisionComponent.cs" />
+    <Compile Include="Interfaces\ICollisionModifier.cs" />
+    <Compile Include="Interfaces\IStateMachine.cs" />
+    <Compile Include="Interfaces\IState.cs" />
+    <Compile Include="Interfaces\ISteeringBehavior.cs" />
+    <Compile Include="Interfaces\IUIManager.cs" />
+    <Compile Include="Interfaces\IUsableComponent.cs" />
+    <Compile Include="Interfaces\IWaypointComponent.cs" />
+    <Compile Include="Inventory\InventoryData.cs" />
+    <Compile Include="Item\DropItem.cs" />
+    <Compile Include="Item\IItemConfig.cs" />
+    <Compile Include="Item\ItemConfigAndQuantityData.cs" />
+    <Compile Include="Item\ItemAndQuantityData.cs" />
+    <Compile Include="Item\ItemClass.cs" />
+    <Compile Include="Item\ItemInInventoryData.cs" />
+    <Compile Include="Item\ItemType.cs" />
+    <Compile Include="Item\StartingItem.cs" />
+    <Compile Include="Messaging\ChangeSceneRequestData.cs" />
+    <Compile Include="DamageEntityInfo.cs" />
+    <Compile Include="Game Data\GameData.cs" />
+    <Compile Include="Interfaces\ISpriteBase.cs" />
+    <Compile Include="Messaging\CollisionMessageData.cs" />
+    <Compile Include="Messaging\Telegram2.cs" />
+    <Compile Include="ObjectPool\ObjectPool.cs" />
+    <Compile Include="ObjectPool\ObjectPoolType.cs" />
+    <Compile Include="Physics\ColliderSearchData.cs" />
+    <Compile Include="Physics\Enum.cs" />
+    <Compile Include="Physics\FollowPathData.cs" />
+    <Compile Include="Physics\IPhysicsAffector.cs" />
+    <Compile Include="Physics\ISteeringBehaviorManager.cs" />
+    <Compile Include="Physics\PathfindingData.cs" />
+    <Compile Include="Physics\SteeringData.cs" />
+    <Compile Include="Physics\WaypointData.cs" />
+    <Compile Include="Physics\AltitudeData.cs" />
+    <Compile Include="Physics\CollisionData.cs" />
+    <Compile Include="Physics\CollisionLevel.cs" />
+    <Compile Include="Physics\BasicPhysicsData.cs" />
+    <Compile Include="Physics\PhysicsData.cs" />
+    <Compile Include="Physics\SingleUnityLayer.cs" />
+    <Compile Include="SceneDeathData.cs" />
+    <Compile Include="Serialization\ActionSequenceData.cs" />
+    <Compile Include="Serialization\EntitiesDiedData.cs" />
+    <Compile Include="Serialization\GamePrefsData.cs" />
+    <Compile Include="Serialization\GameSerializedDataSnapshot.cs" />
+    <Compile Include="Serialization\Input\InputAction.cs" />
+    <Compile Include="Serialization\Input\InputCommand.cs" />
+    <Compile Include="Serialization\Input\InputType.cs" />
+    <Compile Include="Serialization\SceneSnapshot.cs" />
+    <Compile Include="Serialization\SimpleStringData.cs" />
+    <Compile Include="Serialization\GoToData.cs" />
+    <Compile Include="Serialization\AdjustDepthByYData.cs" />
+    <Compile Include="Serialization\AIData.cs" />
+    <Compile Include="Serialization\AnimationData.cs" />
+    <Compile Include="Serialization\AnimatorStateData.cs" />
+    <Compile Include="Serialization\AudioData.cs" />
+    <Compile Include="Serialization\ConversationTriggerData.cs" />
+    <Compile Include="Serialization\FSM\ConversationStartData.cs" />
+    <Compile Include="Serialization\FSM\ConditionExpressionData.cs" />
+    <Compile Include="Serialization\ActionsSerializedData.cs" />
+    <Compile Include="Serialization\FSM\StateTransitionRecordData.cs" />
+    <Compile Include="Serialization\GameObjectStateData.cs" />
+    <Compile Include="Serialization\DateTimeConverter.cs" />
+    <Compile Include="Serialization\EntityPrefab.cs" />
+    <Compile Include="Serialization\EntitySerializedData.cs" />
+    <Compile Include="Enums\AnchorOffset.cs" />
+    <Compile Include="Enums\EntityTarget.cs" />
+    <Compile Include="Enums\LevelLayer.cs" />
+    <Compile Include="Enums\OperatorEnum.cs" />
+    <Compile Include="Enums\WorldAreas.cs" />
+    <Compile Include="Enums\Axis.cs" />
+    <Compile Include="Enums\BehaviorType.cs" />
+    <Compile Include="Enums\Deceleration.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Enums\EntityType.cs" />
+    <Compile Include="Enums\InputButton.cs" />
+    <Compile Include="Enums\Mode.cs" />
+    <Compile Include="Enums\Panels.cs" />
+    <Compile Include="Enums\States.cs" />
+    <Compile Include="Enums\StatusPersistenceLength.cs" />
+    <Compile Include="Enums\Telegrams.cs" />
+    <Compile Include="Game Data\AreaConfig.cs" />
+    <Compile Include="Game Data\AreaData.cs" />
+    <Compile Include="Game Data\GameConfig.cs" />
+    <Compile Include="Game Data\SceneConfig.cs" />
+    <Compile Include="Game Data\SceneData.cs" />
+    <Compile Include="Game Data\SpawnPoint.cs" />
+    <Compile Include="IGameData.cs" />
+    <Compile Include="Interfaces\IBaseObject.cs" />
+    <Compile Include="Interfaces\IComponentRegistrar.cs" />
+    <Compile Include="Interfaces\ISpriteBaseComponent.cs" />
+    <Compile Include="Serialization\GameControllerData.cs" />
+    <Compile Include="Serialization\GameSerializedData.cs" />
+    <Compile Include="Serialization\KillObjectData.cs" />
+    <Compile Include="Serialization\MessageSeria.izedData.cs" />
+    <Compile Include="Points2\Point.cs" />
+    <Compile Include="Points\IPoint.cs" />
+    <Compile Include="Points\IPoints.cs" />
+    <Compile Include="Points\IPointsList.cs" />
+    <Compile Include="Points\LoopingPoints.cs" />
+    <Compile Include="Points\LoopingPointsList.cs" />
+    <Compile Include="Points\NamedPoint.cs" />
+    <Compile Include="Points\Point.cs" />
+    <Compile Include="Points\Points.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneDetails.cs" />
+    <Compile Include="Serialization\PlayerDiedStateData.cs" />
+    <Compile Include="Serialization\PlaySequenceData.cs" />
+    <Compile Include="Serialization\EnableData.cs" />
+    <Compile Include="Serialization\RotateToFacingDirectionData.cs" />
+    <Compile Include="Serialization\SendMessageData.cs" />
+    <Compile Include="Serialization\SequencerLinkData.cs" />
+    <Compile Include="Serialization\SequencerTriggerData.cs" />
+    <Compile Include="Serialization\StateData.cs" />
+    <Compile Include="Serialization\StateMapping.cs" />
+    <Compile Include="Serialization\StateInfo.cs" />
+    <Compile Include="Serialization\ChangeScenesData.cs" />
+    <Compile Include="Serialization\TransformData.cs" />
+    <Compile Include="Skills\SkillAffectedByData.cs" />
+    <Compile Include="SpawnPoint.cs" />
+    <Compile Include="Stats\EntityStatsData.cs" />
+    <Compile Include="Stats\Orbs.cs" />
+    <Compile Include="SteeringBehaviorData.cs" />
+    <Compile Include="SceneVariabe.cs" />
+    <Compile Include="Messaging\Telegram.cs" />
+    <Compile Include="TweenToColorInfo.cs" />
+    <Compile Include="UI\FollowingLabelData.cs" />
+    <Compile Include="UI\HudTextEntryData.cs" />
+    <Compile Include="UI\HudTextSetupData.cs" />
+    <Compile Include="UI\IHudController.cs" />
+    <Compile Include="UI\MaterialHUDData.cs" />
+    <Compile Include="UI\SaveSlotData.cs" />
+    <Compile Include="Variable\VariableGeneric.cs" />
+    <Compile Include="Variable\Variable.cs" />
+    <Compile Include="Variable\Variables.cs" />
+    <Compile Include="Vector2D.cs" />
+    <Compile Include="Vector3Serializer.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(SolutionDir)..\..\..\..\RQ.Unity\src\RQ.Unity\Assets\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)..\..\..\..\RQ.Unity\src\RQ.Unity\Assets\Plugins\" /Y
+echo f | $(SolutionDir)pdb2mdb.exe "$(TargetDir)$(TargetName).dll"
+echo f | xcopy "$(TargetDir)$(TargetName).dll.mdb" "$(SolutionDir)..\..\..\..\RQ.Unity\src\RQ.Unity\Assets\Plugins\" /Y
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

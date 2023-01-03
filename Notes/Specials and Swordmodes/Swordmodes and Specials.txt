@@ -1,0 +1,38 @@
+Rolan's Abilities
+
+- Specials (Is done by smashing his Hammer to the ground converting SP to an ability)
+-- Heal Smash!
+--- Heals HP
+-- Shield Breaker!
+--- Allows Rolan to hit more damage than usual.
+-- Forge Shielder!
+--- Protects Rolan
+-- Forge Barrier!
+--- Protects Rolan from special attacks
+
+
+- Sword modes 
+-- Spectral sword
+--- Cannot do Physical damage.
+---- Can only damage Spiritual beings
+-- Rage blade
+--- Lower HP means stronger damage
+-- Leaf Blade
+--- Deals leaf damage
+---- Drains enemy's life
+-- Fire Blade
+--- Deals more damage 
+---- Plus more damage overtime if the target gets burned.
+-- Ice Blade
+--- Immobilize the target leaving them unable to attack and move for a short period of time.
+-- Legend Blade
+--- Deals damage based from the number of higher monsters Rolan already defeated.
+-- Time Blade
+--- Deals damage based from the number of play hours. 
+---- Allows Rolan to Stop Time, immobilizing all monsters and characters in the area.
+-- Wind Blade
+--- Deals Wind Damage
+---- Allows Rolan to Jump.
+-- Thunderblade
+--- Electric shock
+---- Allows Rolan run faster.

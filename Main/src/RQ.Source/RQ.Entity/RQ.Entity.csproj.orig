@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A4C9670-31AE-473F-892C-A384926A61D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RQ.Entity</RootNamespace>
+    <AssemblyName>RQ.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BehaviorDesignerRuntime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Reference Assemblies\BehaviorDesignerRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="DialogueSystem, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Reference Assemblies\DialogueSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker">
+      <HintPath>..\..\..\Reference Assemblies\PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Reference Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="usequencerRuntime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Reference Assemblies\usequencerRuntime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="AI\PlayMaker\Attack.cs" />
+=======
+    <Compile Include="AI\PlayMaker\GetAttackCount.cs" />
+    <Compile Include="AI\PlayMaker\CurrentUsableAvailable.cs" />
+>>>>>>> 62ebc5fc089b84b02c1c7c860d199c3c7482a706
+    <Compile Include="AI\PlayMaker\DamageBounce.cs" />
+    <Compile Include="AI\PlayMaker\GetFloatVariable.cs" />
+    <Compile Include="AI\PlayMaker\ButtonPressed.cs" />
+    <Compile Include="AI\PlayMaker\KillSelf.cs" />
+    <Compile Include="AI\PlayMaker\IsDamaged.cs" />
+    <Compile Include="AI\PlayMaker\IsMessageReceived.cs" />
+    <Compile Include="AI\PlayMaker\PlayAnimation.cs" />
+    <Compile Include="AI\PlayMaker\GetSpeed.cs" />
+    <Compile Include="AI\PlayMaker\PlayerMove.cs" />
+<<<<<<< HEAD
+    <Compile Include="AtomAction\Action\AttackAtom.cs" />
+=======
+    <Compile Include="AtomAction\Action\CurrentUsableAvailableAtom.cs" />
+>>>>>>> 62ebc5fc089b84b02c1c7c860d199c3c7482a706
+    <Compile Include="AtomAction\Action\EnableBehaviorTreeAtom.cs" />
+    <Compile Include="AtomAction\Action\GetFloatVariableAtom.cs" />
+    <Compile Include="AtomAction\Action\GetAttackCountAtom.cs" />
+    <Compile Include="AtomAction\Action\GetSpeedVariableAtom.cs" />
+    <Compile Include="AtomAction\Action\KillSelfAtom.cs" />
+    <Compile Include="AtomAction\Action\PlayerMoveAtom.cs" />
+    <Compile Include="AtomAction\Action\PlayKillSoundAtom.cs" />
+    <Compile Include="AtomAction\Action\PlayDamageSoundAtom.cs" />
+    <Compile Include="AtomAction\Action\PlaySoundOneShotAtom.cs" />
+    <Compile Include="AtomAction\Action\DamageBounceAtom.cs" />
+    <Compile Include="AtomAction\Action\ButtonPressedAtom.cs" />
+    <Compile Include="AtomAction\Action\StopMovingAtom.cs" />
+    <Compile Include="AtomAction\Action\ShootObjectAtom.cs" />
+    <Compile Include="AtomAction\Condition\IsDamagedConditionAI.cs" />
+    <Compile Include="Assets\PlayerLevelData.cs" />
+    <Compile Include="Assets\PlayerLevelStatsConfig.cs" />
+    <Compile Include="AtomAction\Condition\IsMessageReceivedAtom.cs" />
+    <Compile Include="Common\BaseGameEntity.cs" />
+    <Compile Include="Common\IBaseGameEntity.cs" />
+    <Compile Include="Common\EntityController.cs" />
+    <Compile Include="Common\EntityFactory.cs" />
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Components\ConversationTriggerComponent.cs" />
+    <Compile Include="Components\ItemComponent2.cs" />
+    <Compile Include="Components\TreasureComponent.cs" />
+    <Compile Include="Components\PlayerDeathComponent.cs" />
+    <Compile Include="Components\ItemComponent.cs" />
+    <Compile Include="Components\KillWhenAnimationComplete.cs" />
+    <Compile Include="Components\PlayerComponent.cs" />
+    <Compile Include="Components\GameObjectStatePersistenceComponent.cs" />
+    <Compile Include="Components\HudTextComponent.cs" />
+    <Compile Include="Components\BehaviorTreeComponent.cs" />
+    <Compile Include="Components\PlayMakerStateMachineComponent.cs" />
+    <Compile Include="Components\UnityStateMachineComponent.cs" />
+    <Compile Include="Components\WaypointComponent.cs" />
+    <Compile Include="Components\UsableComponent.cs" />
+    <Compile Include="Components\StatusPersistenceComponent.cs" />
+    <Compile Include="Components\DeathPersistenceComponent.cs" />
+    <Compile Include="Components\SpriteBaseComponent.cs" />
+    <Compile Include="Components\EntityStatsComponent.cs" />
+    <Compile Include="Config\TreasureConfig.cs" />
+    <Compile Include="Data\SmartFollowData.cs" />
+    <Compile Include="EntityManager.cs" />
+    <Compile Include="Item\ItemConfigAndQuantityData.cs" />
+    <Compile Include="Item\OrbCost.cs" />
+    <Compile Include="Item\SkillConfig.cs" />
+    <Compile Include="Item\ItemConfigAction.cs" />
+    <Compile Include="Item\ItemConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprites\Bomb.cs" />
+    <Compile Include="Sprites\BombExplosion.cs" />
+    <Compile Include="Sprites\Door.cs" />
+    <Compile Include="Sprites\GolemSentry.cs" />
+    <Compile Include="Sprites\SimpleSprite.cs" />
+    <Compile Include="Sprites\WolfBowman.cs" />
+    <Compile Include="Sprites\PlantBombthrower.cs" />
+    <Compile Include="Sprites\RolanV2.cs" />
+    <Compile Include="StatesV2\Cutscene\PlaySequence.cs" />
+    <Compile Include="StatesV2\Death\EnemyDiedState.cs" />
+    <Compile Include="StatesV2\Death\PlayerDiedState.cs" />
+    <Compile Include="StatesV2\Death\BossDiedState.cs" />
+    <Compile Include="StatesV2\Entity\EnableObjectsState.cs" />
+    <Compile Include="StatesV2\Entity\SetVulnerabilityState.cs" />
+    <Compile Include="StatesV2\HitGroundState.cs" />
+    <Compile Include="StatesV2\Physics\EnableComponentState.cs" />
+    <Compile Include="StatesV2\Physics\EnableCollisionComponentState.cs" />
+    <Compile Include="StatesV2\Physics\EntityPausedState.cs" />
+    <Compile Include="StatesV2\Physics\ShakeState.cs" />
+    <Compile Include="StatesV2\Lightning.cs" />
+    <Compile Include="StatesV2\Skills\AttackSkill.cs" />
+    <Compile Include="StatesV2\Skills\BoxAttackSkill.cs" />
+    <Compile Include="StatesV2\Skills\Skill.cs" />
+    <Compile Include="StatesV2\SmartGoHome.cs" />
+    <Compile Include="StatesV2\StateTransform\Scale.cs" />
+    <Compile Include="StatesV2\Conditions\CurrentUsableAvailableCondition.cs" />
+    <Compile Include="StatesV2\Conditions\UsableInRangeCondition.cs" />
+    <Compile Include="StatesV2\Conditions\SpriteBoolVariableCondition.cs" />
+    <Compile Include="StatesV2\Custom\FlyingRacoonGlideState.cs" />
+    <Compile Include="StatesV2\Custom\FlyingRacoonTargetReachedState.cs" />
+    <Compile Include="StatesV2\Custom\FlyingRacoonRisingState.cs" />
+    <Compile Include="StatesV2\HideState.cs" />
+    <Compile Include="StatesV2\Items\AddItem.cs" />
+    <Compile Include="StatesV2\NPCCutscene.cs" />
+    <Compile Include="StatesV2\TreasureProcessingtate.cs" />
+    <Compile Include="StatesV2\TreasureOpenState.cs" />
+    <Compile Include="StatesV2\TreasureOpeningState.cs" />
+    <Compile Include="StatesV2\Physics\SimpleMovementToRandomTargetsState.cs" />
+    <Compile Include="StatesV2\Physics\SimpleMovementToTargetState.cs" />
+    <Compile Include="StatesV2\Physics\SimpleMovementState.cs" />
+    <Compile Include="StatesV2\Death\DiedState.cs" />
+    <Compile Include="StatesV2\Conditions\IsDamagedCondition.cs" />
+    <Compile Include="StatesV2\Conditions\EntityDistanceCondition.cs" />
+    <Compile Include="StatesV2\Conditions\IsStuckCondition.cs" />
+    <Compile Include="StatesV2\Active.cs" />
+    <Compile Include="StatesV2\Conditions\CollisionCondition.cs" />
+    <Compile Include="StatesV2\Conditions\ObjectNearbyCondition.cs" />
+    <Compile Include="StatesV2\Damaged.cs" />
+    <Compile Include="StatesV2\Color.cs" />
+    <Compile Include="StatesV2\Idle.cs" />
+    <Compile Include="StatesV2\InstantiatePrefab.cs" />
+    <Compile Include="StatesV2\UI\StartConversation.cs" />
+    <Compile Include="StatesV2\Events\TriggerUsable.cs" />
+    <Compile Include="StatesV2\UseCurrentUsableState.cs" />
+    <Compile Include="StatesV2\SmartFollow.cs" />
+    <Compile Include="StatesV2\ShootObject.cs" />
+    <Compile Include="StatesV2\Entity\LineUpShot.cs" />
+    <Compile Include="StatesV2\Conditions\SeesTargetCondition.cs" />
+    <Compile Include="StatesV2\Conditions\PathFinishedCondition.cs" />
+    <Compile Include="StatesV2\Conditions\SpriteFloatVariableCondition.cs" />
+    <Compile Include="StatesV2\Conditions\SpeedCondition.cs" />
+    <Compile Include="StatesV2\FollowPath.cs" />
+    <Compile Include="StatesV2\LaunchSelf.cs" />
+    <Compile Include="StatesV2\PlayerControlState.cs" />
+    <Compile Include="StatesV2\AnimatorState.cs" />
+    <Compile Include="StatesV2\Conditions\AnimationCompleteCondition.cs" />
+    <Compile Include="StatesV2\Attack.cs" />
+    <Compile Include="StatesV2\KillSelf.cs" />
+    <Compile Include="StatesV2\GoTo.cs" />
+    <Compile Include="StatesV2\WalkWander.cs" />
+    <Compile Include="StatesV3\Conditionals\AttackCountConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\SelectedSkillAffordableConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\IsHomesickConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\EntityDistanceConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\ItemUsedConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\AnimationCompleteConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\CollisionConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\IsDamagedConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\EntityInViewportConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\PathFinishedConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\SeesTargetConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\AttackedBySkillConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\SelectedSkillConditionConfig.cs" />
+    <Compile Include="StatesV3\Conditionals\SpriteFloatVariableConditionConfig.cs" />
+    <Compile Include="UI\EntityUIBase.cs" />
+    <Compile Include="UI\SimpleSprite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RQ.Animation\RQ.Animation.csproj">
+      <Project>{799b5eec-066d-41d2-b081-ac54e54bef2c}</Project>
+      <Name>RQ.Animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Audio\RQ.Audio.csproj">
+      <Project>{899de360-c031-415d-a39a-bb864f93b479}</Project>
+      <Name>RQ.Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Common\RQ.Common.csproj">
+      <Project>{1988f4b7-b2ac-4cd0-ace7-0a188ac59323}</Project>
+      <Name>RQ.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.FSM\RQ.FSM.csproj">
+      <Project>{a22ba700-d9a0-43d7-8af7-b1b331a83947}</Project>
+      <Name>RQ.FSM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Input\RQ.Input.csproj">
+      <Project>{3b1e846b-234d-4338-803c-0a5c7ee8d66f}</Project>
+      <Name>RQ.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Messaging\RQ.Messaging.csproj">
+      <Project>{5176ec60-ff1d-4cdd-a140-d442d6936319}</Project>
+      <Name>RQ.Messaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Model\RQ.Model.csproj">
+      <Project>{73cbdc60-d872-4438-9233-31cf9061349a}</Project>
+      <Name>RQ.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Physics\RQ.Physics.csproj">
+      <Project>{4bd785a3-65d8-4b7b-b11b-db116d6dd00a}</Project>
+      <Name>RQ.Physics</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(SolutionDir)..\RQ.Unity\Assets\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)..\RQ.Unity\Assets\Plugins\" /Y
+echo f | $(SolutionDir)pdb2mdb.exe "$(TargetDir)$(TargetName).dll"
+echo f | xcopy "$(TargetDir)$(TargetName).dll.mdb" "$(SolutionDir)..\RQ.Unity\Assets\Plugins\" /Y
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15BEDEE0-D097-4B39-AA30-78B70DC51EDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RQ.Source</RootNamespace>
+    <AssemblyName>RQ.Source</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_4_6_2;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DialogueSystem">
+      <HintPath>..\..\..\Reference Assemblies\DialogueSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Reference Assemblies\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Reference Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="uSequencerRuntime">
+      <HintPath>..\..\..\Reference Assemblies\uSequencerRuntime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AstarPathfindingProject\AstarPathfindingProject.csproj">
+      <Project>{8a93caf7-1785-413f-a17d-484ded7704f8}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dialogue System\Dialogue System.csproj">
+      <Project>{7ad70f45-69f1-4c76-8456-ad6a6b26a7fd}</Project>
+      <Name>Dialogue System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NGUI\NGUI.csproj">
+      <Project>{dce2c205-8ba3-4e6b-92b2-189b91030da0}</Project>
+      <Name>NGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Animation\RQ.Animation.csproj">
+      <Project>{799b5eec-066d-41d2-b081-ac54e54bef2c}</Project>
+      <Name>RQ.Animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Audio\RQ.Audio.csproj">
+      <Project>{899de360-c031-415d-a39a-bb864f93b479}</Project>
+      <Name>RQ.Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Common\RQ.Common.csproj">
+      <Project>{1988f4b7-b2ac-4cd0-ace7-0a188ac59323}</Project>
+      <Name>RQ.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Entity\RQ.Entity.csproj">
+      <Project>{0a4c9670-31ae-473f-892c-a384926a61d3}</Project>
+      <Name>RQ.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.FSM\RQ.FSM.csproj">
+      <Project>{a22ba700-d9a0-43d7-8af7-b1b331a83947}</Project>
+      <Name>RQ.FSM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Input\RQ.Input.csproj">
+      <Project>{3b1e846b-234d-4338-803c-0a5c7ee8d66f}</Project>
+      <Name>RQ.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Messaging\RQ.Messaging.csproj">
+      <Project>{5176ec60-ff1d-4cdd-a140-d442d6936319}</Project>
+      <Name>RQ.Messaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Model\RQ.Model.csproj">
+      <Project>{73cbdc60-d872-4438-9233-31cf9061349a}</Project>
+      <Name>RQ.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RQ.Physics\RQ.Physics.csproj">
+      <Project>{4bd785a3-65d8-4b7b-b11b-db116d6dd00a}</Project>
+      <Name>RQ.Physics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK2D\TK2D.csproj">
+      <Project>{15817793-5476-49e1-a75e-9baadf7e6be4}</Project>
+      <Name>TK2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\uSequencer\uSequencer.csproj">
+      <Project>{074b1776-2781-4dda-9b81-9c74c6c5266d}</Project>
+      <Name>uSequencer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "C:\Git\RolansQuest3\Main\src\RQ.Unity\Assets\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "C:\Git\RolansQuest3\Main\src\RQ.Unity\Assets\Plugins\" /Y
+"C:\Program Files (x86)\Unity\Editor\Data\Mono\lib\mono\2.0\pdb2mdb.exe" "C:\Git\RolansQuest3\Main\src\RQ.Unity\Assets\Plugins\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

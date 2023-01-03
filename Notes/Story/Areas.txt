@@ -1,0 +1,28 @@
+1. An underwater section - The character will be walking around on the bottom of the ocean. There will be a town at the bottom of the ocean too.  Think Break of Fire.  Everything will have a blue tint, and I'll work on programming a wavy effect.
+2. An air section (basically walking on the sky)
+3. A fire/lava dungeon (like the second picture)
+4. Desert (Naveen is working on the level for this)
+5. Winter/snow
+6. Some sort of outer space area  (you will walk on space, essentially walking over nothing.  If I recall, Breath of Fire has a section like this)
+7. Castle - Good (joyful and happy)
+8. Castle - Bad (thinking something dark and moody)
+9. Sage temple (this is where Rolan will transform into his upgraded form).  This temple is important in the game and distinct from all other areas.  I'm thinking of something big and magnificent.  Thinking of the Ivory Tower in The Neverending Story when I imagine this. Here's the Ivory Tower in The Neverending Story: http://www.neverendingstory.com/images/Image050.jpg
+10. Cave (standard cave with enemies, will be reused as a level)
+
+
+
+[12:08:36 AM] Kevin Tan: In my humble opinion, the locations that has the most potential for visual impact are the underwater, fire dungeon and air section
+[12:08:54 AM] Ephraim Mangohig: i like to see that
+[12:11:17 AM] Brian Karcher: OK
+[12:11:20 AM] Kevin Tan: ephraim has a great suggestion
+[12:11:47 AM] Kevin Tan: we could start by showing some drama - showing the burning town or something similar
+[12:12:09 AM] Kevin Tan: then we could move forward in the more action oriented scenes as the trailer progresses
+[12:12:32 AM] Kevin Tan: then the boss sneak peek idea you've mentioned earlier
+[12:12:53 AM] Brian Karcher: I like that.  It would fit the feel of the music, which starts slow and picks up the pace.
+[12:13:20 AM] Ephraim Mangohig: you will see Rolan is doing his blacksmith job at first
+[12:15:37 AM] Brian Karcher: So forest town/blacksmith job, then burning town single screen shot, then Venice town, then the Spire, then the three fighting areas?  (the middle fighting area showcasing a puzzle)?
+[12:16:07 AM] Kevin Tan: sounds good
+[12:16:38 AM] Ephraim Mangohig: yeah, i think the action part is maybe the actual game. with the Ui, damage numbers or so...
+[12:17:21 AM] Ephraim Mangohig: people will see that theres a story in it, and its a game
+[12:17:53 AM] Brian Karcher: For the finisher, I was actually thinking about having the music stop naturally as it hits the two minute mark.  Then the screen flashes white as Rolan is attacking an enemy.  The viewer thinks the trailer is over.  Then the whtie fades away, still with no music, to a forest area.  Then a few thumping sounds.  Then the boss shows himself and screams at Rolan, ending the trailer.
+[12:18:31 AM] Brian Karcher: A huge, menacing boss.

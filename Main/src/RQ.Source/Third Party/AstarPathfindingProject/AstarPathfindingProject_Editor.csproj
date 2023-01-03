@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A93CAF7-1785-413F-A17D-484DED7704F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AstarPathfindingProject</RootNamespace>
+    <AssemblyName>AstarPathfindingProject</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>..\..\..\Reference Assemblies\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.JsonFx">
+      <HintPath>..\..\..\Reference Assemblies\Pathfinding.JsonFx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\Reference Assemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Reference Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="changelog.cs" />
+    <Compile Include="Core\AI\AIPath.cs" />
+    <Compile Include="Core\AI\NavmeshController.cs" />
+    <Compile Include="Core\AI\Seeker.cs" />
+    <Compile Include="Core\astarclasses.cs" />
+    <Compile Include="Core\AstarData.cs" />
+    <Compile Include="Core\AstarMath.cs" />
+    <Compile Include="Core\AstarPath.cs" />
+    <Compile Include="Core\GraphUpdateScene.cs" />
+    <Compile Include="Core\GraphUpdateShape.cs" />
+    <Compile Include="Core\Misc\AnimationLink.cs" />
+    <Compile Include="Core\Misc\AstarDebugger.cs" />
+    <Compile Include="Core\Misc\AstarEnumFlagAttr.cs" />
+    <Compile Include="Core\Misc\BinaryHeap.cs" />
+    <Compile Include="Core\Misc\GraphEditorBase.cs" />
+    <Compile Include="Core\Misc\GraphModifier.cs" />
+    <Compile Include="Core\Misc\Int3.cs" />
+    <Compile Include="Core\Misc\ListPool.cs" />
+    <Compile Include="Core\Misc\NodeLink.cs" />
+    <Compile Include="Core\Misc\NodeLink2.cs" />
+    <Compile Include="Core\Misc\NodeLink3.cs" />
+    <Compile Include="Core\Misc\ObjectPool.cs" />
+    <Compile Include="Core\Misc\PathPool.cs" />
+    <Compile Include="Core\Misc\StackPool.cs" />
+    <Compile Include="Core\Misc\ThreadControlQueue.cs" />
+    <Compile Include="Core\Misc\WindowsStoreCompatibility.cs" />
+    <Compile Include="Core\Nodes\GraphNode.cs" />
+    <Compile Include="Core\Path.cs" />
+    <Compile Include="Core\PathHandler.cs" />
+    <Compile Include="Core\Serialization\JsonConverters.cs" />
+    <Compile Include="Core\Serialization\JsonSerializer.cs" />
+    <Compile Include="Core\Serialization\SimpleJsonReplacement.cs" />
+    <Compile Include="Core\Serialization\SimpleZipReplacement.cs" />
+    <Compile Include="Generators\Base.cs" />
+    <Compile Include="Generators\GridGenerator.cs" />
+    <Compile Include="Generators\NavMeshGenerator.cs" />
+    <Compile Include="Generators\NodeClasses\GridNode.cs" />
+    <Compile Include="Generators\NodeClasses\PointNode.cs" />
+    <Compile Include="Generators\NodeClasses\TriangleMeshNode.cs" />
+    <Compile Include="Generators\PointGenerator.cs" />
+    <Compile Include="Generators\QuadtreeGraph.cs" />
+    <Compile Include="Generators\Utilities\BBTree.cs" />
+    <Compile Include="Generators\Utilities\EuclideanEmbedding.cs" />
+    <Compile Include="Generators\Utilities\NavMeshRenderer.cs" />
+    <Compile Include="Generators\Utilities\ObjImporter.cs" />
+    <Compile Include="Modifiers\AlternativePath.cs" />
+    <Compile Include="Modifiers\FunnelModifier.cs" />
+    <Compile Include="Modifiers\Modifiers.cs" />
+    <Compile Include="Modifiers\RaycastModifier.cs" />
+    <Compile Include="Modifiers\SimpleSmoothModifier.cs" />
+    <Compile Include="Modifiers\StartEndModifier.cs" />
+    <Compile Include="Navmesh\RelevantGraphSurface.cs" />
+    <Compile Include="Pathfinders\ABPath.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\AstarChecksum.cs" />
+    <Compile Include="Utilities\AstarMemory.cs" />
+    <Compile Include="Utilities\AstarParallel.cs" />
+    <Compile Include="Utilities\AstarProfiler.cs" />
+    <Compile Include="Utilities\DotNetReplacements.cs" />
+    <Compile Include="Utilities\GraphUpdateUtilities.cs" />
+    <Compile Include="Utilities\LockFreeStack.cs" />
+    <Compile Include="Utilities\PathUtilities.cs" />
+    <Compile Include="Utilities\ProfileHelper.cs" />
+    <Compile Include="Utilities\UnityReferenceHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(SolutionDir)..\..\Reference Assemblies\Debug\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)..\..\Reference Assemblies\Debug\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

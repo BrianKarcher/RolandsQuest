@@ -1,0 +1,47 @@
+Icy ground - player slides - keeps some velocity, but slows down if no input.
+Swimming?
+
+Teleport tile puzzle
+
+Cloud cover
+
+Secret of Mana:
+Enemies:
+Rabbite - rabbit jumps at you, and also moves around aimlessly.
+Duck with helmut - Shoots out pumpkins that run after you and explode
+Electronic scorpion?  Attacks with tail
+Teddy bear character attacks with arrows - big range and bombards from above - big distance
+Legs coming up from ground - casts magic.  Usually located in quicksand. Does not move
+Wolf - Runs around towards you XY and jumps at you as its attack, casts magic
+Pink flower - Wanders around aimlessly, short range attack with polin.
+Hedghog - Spins dirt around, wanders aimlessly, goes underground to get close to you.
+Turtle with spear - goes into shell and enters helicopter mode, attacks with spear. Hides in shell.
+Water blob - Spawns more water blobs.
+Cloud - Casts magic, only magic can harm it.
+Iron eye, shoots circular rays
+Flying book
+
+
+
+Bosses:
+Large plant that comes out of the ground - launches bouncing balls that attack you, has two
+helpers extending vines.
+Dino with crown - Tongue goes out, swallows you, wanders aimlessly
+Gigas - Big oaf, casts magic, goes into defense mode by changing into orbs that fly around for a while. Is first boss of game.
+
+Areas:
+Forest - Summer, Fall, Winter, and Spring settings
+Forest towns
+Caves as dungeons
+Palaces as dungeons
+Mushroom kingdom - cloudy area, seems to want to be swampy but no water, some straw floors, straw beds
+Desert
+Sandship - Kind of like in star wars
+Desert Town - Karakka
+Fire temple
+North Pole town
+North Pole area - has crystals sticking out of the ground, sparkly trees
+Empire town - fortified and walled
+Gold City
+Walking on space and stars
+

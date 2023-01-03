@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DC0C231-09F4-4386-9CF1-661022BC2FDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TK2D.Editor</RootNamespace>
+    <AssemblyName>TK2D.Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_4_6_2;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tk2dExternal">
+      <HintPath>..\..\..\Reference Assemblies\tk2dExternal.dll</HintPath>
+    </Reference>
+    <Reference Include="tk2dSkin">
+      <HintPath>..\..\..\Reference Assemblies\tk2dSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\Reference Assemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Reference Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Camera\tk2dCameraAnchorEditor.cs" />
+    <Compile Include="Core\Camera\tk2dCameraEditor.cs" />
+    <Compile Include="Core\Fonts\tk2dFontBuilder.cs" />
+    <Compile Include="Core\Fonts\tk2dFontEditor.cs" />
+    <Compile Include="Core\Fonts\tk2dTextMeshEditor.cs" />
+    <Compile Include="Core\Runtime\tk2dResourceEditor.cs" />
+    <Compile Include="Core\Runtime\tk2dSystemUtility.cs" />
+    <Compile Include="Core\Shared\tk2dNaturalComparer.cs" />
+    <Compile Include="Core\Sprites\Atlas\tk2dAtlasBuilder.cs" />
+    <Compile Include="Core\Sprites\Atlas\tk2dAtlasRect.cs" />
+    <Compile Include="Core\Sprites\Atlas\tk2dMaxRectsBinPack.cs" />
+    <Compile Include="Core\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationAnimOp.cs" />
+    <Compile Include="Core\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationClipEditor.cs" />
+    <Compile Include="Core\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationClipTimelineEditor.cs" />
+    <Compile Include="Core\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationEditor.cs" />
+    <Compile Include="Core\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationEditorPopup.cs" />
+    <Compile Include="Core\Sprites\SpriteAnimationEditor\tk2dSpriteAnimationPreview.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditor.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorFontView.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorPopup.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorProxy.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorSettingsView.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorSpriteSheetView.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorSpriteView.cs" />
+    <Compile Include="Core\Sprites\SpriteCollectionEditor\tk2dSpriteCollectionEditorTextureView.cs" />
+    <Compile Include="Core\Sprites\SpritePicker\tk2dSpritePickerPopup.cs" />
+    <Compile Include="Core\Sprites\TextureProcessing\tk2dFloydSteinbergDithering.cs" />
+    <Compile Include="Core\Sprites\tk2dAnimatedSpriteEditor.cs" />
+    <Compile Include="Core\Sprites\tk2dClippedSpriteEditor.cs" />
+    <Compile Include="Core\Sprites\tk2dSlicedSpriteEditor.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteAnimatorEditor.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteCollectionBuilder.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteCollectionBuilderDeprecated.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteCollectionBuilderUtil.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteCollectionLinkBuilder.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteCollectionPlatformBuilder.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteCollectionTextureWatcher.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteEditor.cs" />
+    <Compile Include="Core\Sprites\tk2dSpriteThumbnailCache.cs" />
+    <Compile Include="Core\Sprites\tk2dStaticSpriteBatcherEditor.cs" />
+    <Compile Include="Core\Sprites\tk2dTiledSpriteEditor.cs" />
+    <Compile Include="Core\Sprites\Triangulator\tk2dSpriteFromTextureEditor.cs" />
+    <Compile Include="Core\Sprites\Triangulator\tk2dTriangulator.cs" />
+    <Compile Include="Core\tk2dEditorSkin.cs" />
+    <Compile Include="Core\tk2dEditorUtility.cs" />
+    <Compile Include="Core\tk2dGrid.cs" />
+    <Compile Include="Core\tk2dGuiUtility.cs" />
+    <Compile Include="Core\tk2dIndex.cs" />
+    <Compile Include="Core\tk2dJSSupport.cs" />
+    <Compile Include="Core\tk2dMenu.cs" />
+    <Compile Include="Core\tk2dPreferencesEditor.cs" />
+    <Compile Include="Core\tk2dScaleUtility.cs" />
+    <Compile Include="Core\tk2dSceneHelper.cs" />
+    <Compile Include="Core\tk2dSpriteGuiUtility.cs" />
+    <Compile Include="Core\tk2dUndo.cs" />
+    <Compile Include="Core\tk2dUpdateWindow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TileMap\Importer\tk2dTileMapImporter.cs" />
+    <Compile Include="TileMap\tk2dTileMapBrushBuilder.cs" />
+    <Compile Include="TileMap\tk2dTileMapBrushRenderer.cs" />
+    <Compile Include="TileMap\tk2dTileMapEditor.cs" />
+    <Compile Include="TileMap\tk2dTileMapEditorData.cs" />
+    <Compile Include="TileMap\tk2dTileMapEditorDataInspector.cs" />
+    <Compile Include="TileMap\tk2dTileMapSceneGUI.cs" />
+    <Compile Include="TileMap\tk2dTileMapScratchpad.cs" />
+    <Compile Include="TileMap\tk2dTileMapToolbar.cs" />
+    <Compile Include="TileMap\tk2dTileMapUtility.cs" />
+    <Compile Include="UI\Controls\tk2dUIBaseItemControlEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIControlsHelperEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUICustomEditorGUILayout.cs" />
+    <Compile Include="UI\Controls\tk2dUIDragItemEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIDropDownMenuEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIHoverItemEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIMultiStateToggleButtonEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIProgressBarEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIScrollableAreaEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIScrollbarEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUISoundItemEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUITextInputEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIToggleButtonEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIToggleButtonGroupEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIToggleControlEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUITweenItemEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIUpDownButtonEditor.cs" />
+    <Compile Include="UI\Controls\tk2dUIUpDownHoverButtonEditor.cs" />
+    <Compile Include="UI\Core\tk2dUIItemBoundsHelper.cs" />
+    <Compile Include="UI\Core\tk2dUIItemEditor.cs" />
+    <Compile Include="UI\Core\tk2dUILayoutContainerEditor.cs" />
+    <Compile Include="UI\Core\tk2dUILayoutContainerSizerEditor.cs" />
+    <Compile Include="UI\Core\tk2dUILayoutEditor.cs" />
+    <Compile Include="UI\Core\tk2dUIMaskEditor.cs" />
+    <Compile Include="UI\Core\tk2dUIMethodBindingHelper.cs" />
+    <Compile Include="UI\Core\tk2dUISpriteAnimatorEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TK2D\TK2D.csproj">
+      <Project>{15817793-5476-49e1-a75e-9baadf7e6be4}</Project>
+      <Name>TK2D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "C:\Git\RolansQuest3\Main\src\RQ.Unity\Assets\Plugins\Editor\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "C:\Git\RolansQuest3\Main\src\RQ.Unity\Assets\Plugins\Editor\" /Y
+"C:\Program Files (x86)\Unity\Editor\Data\Mono\lib\mono\2.0\pdb2mdb.exe" "C:\Git\RolansQuest3\Main\src\RQ.Unity\Assets\Plugins\Editor\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

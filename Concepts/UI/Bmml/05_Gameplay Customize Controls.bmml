@@ -1,0 +1,42 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1242" measuredH="587" mockupW="960" mockupH="540">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="282" y="47" w="960" h="540" measuredW="100" measuredH="70" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Title" x="316" y="75" w="-1" h="-1" measuredW="108" measuredH="33" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>CUSTOM</text>
+      </controlProperties>
+    </control>
+    <control controlID="126" controlTypeID="com.balsamiq.mockups::HRule" x="316" y="108" w="892" h="-1" measuredW="100" measuredH="10" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::VRule" x="572" y="147" w="-1" h="405" measuredW="10" measuredH="100" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::List" x="316" y="147" w="235" h="340" measuredW="100" measuredH="314" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <rowHeight>39</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <size>18</size>
+        <text>UP%0ADOWN%0ALEFT%0ARIGHT%0ACONFIRM/ATTACK%0ACANCEL/JUMP%0AHAMMER%0AMENU</text>
+      </controlProperties>
+    </control>
+    <control controlID="134" controlTypeID="com.balsamiq.mockups::List" x="611" y="147" w="235" h="340" measuredW="100" measuredH="314" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <rowHeight>39</rowHeight>
+        <selectedIndex>1</selectedIndex>
+        <size>18</size>
+        <text>Up%0ADown%0ALeft%0ARight%0ACircle%0AX%0ASquare%0ATriangle</text>
+      </controlProperties>
+    </control>
+    <control controlID="136" controlTypeID="com.balsamiq.mockups::Label" x="976" y="75" w="-1" h="-1" measuredW="232" measuredH="33" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>Select%20to%20detect%20input</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

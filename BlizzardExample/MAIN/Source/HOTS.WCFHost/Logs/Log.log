@@ -1,0 +1,28 @@
+2015-10-27 00:31:52,735 [18] ERROR HOTS.Logging.Logger                                LogError             - 
+Message: One or more errors occurred.
+Source: mscorlib
+Stack Trace:    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at HOTS.WCFHost.HotsService.<>c__DisplayClass7.<InsertHero>b__6() in c:\Projects\Blizzard\BlizzardExample\WCFHost\HotsService.svc.cs:line 44
+TargetSite: Void ThrowIfExceptional(Boolean)
+
+Message: Test
+Source: HOTS.Logic
+Stack Trace:    at HOTS.Logic.HeroLogic.<>c__DisplayClasse.<InsertHero>b__d() in c:\Projects\Blizzard\BlizzardExample\HOTS.Logic\HeroLogic.cs:line 82
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at HOTS.Logic.HeroLogic.<InsertHero>d__10.MoveNext() in c:\Projects\Blizzard\BlizzardExample\HOTS.Logic\HeroLogic.cs:line 86
+TargetSite: System.String <InsertHero>b__d()
+
+
+
+2015-10-27 00:33:54,233 [24] INFO  HOTS.Logging.Logger                                LogInfo              - Added new hero Brian!
+
+
+2015-10-27 00:35:10,950 [13] INFO  HOTS.Logging.Logger - Added new hero Brian!
+
